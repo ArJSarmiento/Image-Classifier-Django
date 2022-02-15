@@ -1,5 +1,5 @@
 # Image-Classifier-Django
-A dynamic image classifier website that uses a Tensorflow Machine learning model in the Django Web Framework.
+A dynamic image classifier website that uses a Tensorflow Machine learning model in the Django Web Framework. To run this project, make sure you have Python 3.8 virtual environment set-up. 
 
 # Setup:
 1.
