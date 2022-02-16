@@ -18,3 +18,5 @@ python manage.py migrate
 ```shell
 python manage.py runserver
 ```
+# Demo:
+[![VIEW DEMO](https://img.youtube.com/vi/Y-tYiDPrqYk/maxresdefault.jpg)](https://www.youtube.com/watch?v=Y-tYiDPrqYk)
