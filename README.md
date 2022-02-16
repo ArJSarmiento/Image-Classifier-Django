@@ -4,7 +4,7 @@ A dynamic image classifier website that uses a Tensorflow Machine learning model
 # Setup:
 1.
 ```shell
-pip3 install -r requirements.txt
+pip3 install --user -r requirements.txt
 ```
 2.
 ```shell
