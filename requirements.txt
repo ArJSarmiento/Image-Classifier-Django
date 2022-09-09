@@ -1,10 +1,13 @@
 absl-py==0.12.0
-asgiref==3.3.1
+asgiref==3.5.2
 astunparse==1.6.3
+backports.zoneinfo==0.2.1
 cachetools==4.2.1
 certifi==2020.12.5
 chardet==4.0.0
-Django==3.1.7
+Django==4.1.1
+django-filter==22.1
+djangorestframework==3.13.1
 flatbuffers==1.12
 gast==0.3.3
 google-auth==1.28.0
@@ -37,6 +40,7 @@ tensorflow==2.4.1
 tensorflow-estimator==2.4.0
 termcolor==1.1.0
 typing-extensions==3.7.4.3
+tzdata==2022.2
 urllib3==1.26.4
 Werkzeug==1.0.1
 wrapt==1.12.1
