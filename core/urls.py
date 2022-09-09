@@ -7,8 +7,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('classify', views.classify, name="classify"),
-    path('admin/', admin.site.urls),
+    path('classify', views.classify, name="classify")
 ]
 
 if settings.DEBUG:

@@ -19,7 +19,7 @@ from tensorflow.python.keras.backend import set_session
 def index():
     data = {
         'name': 'Arnel Jan Sarmiento',
-        'job': 'Software Engineer',
+        'job': 'Intermediate Full-stack Web Developer',
     }
     return Response(data)
 
