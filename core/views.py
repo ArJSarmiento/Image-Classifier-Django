@@ -16,7 +16,7 @@ from tensorflow.python.keras.backend import set_session
 
 
 @api_view(['GET'])
-def index():
+def index(request):
     data = {
         'name': 'Arnel Jan Sarmiento',
         'job': 'Intermediate Full-stack Web Developer',
