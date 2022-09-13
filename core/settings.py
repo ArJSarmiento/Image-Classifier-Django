@@ -1,5 +1,5 @@
+import django_on_heroku
 import os
-
 import tensorflow.compat.v1 as tf
 from keras.applications import vgg16
 from tensorflow.python.keras.backend import set_session
@@ -62,6 +62,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -147,3 +148,5 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
+
+django_on_heroku.settings(locals(), staticfiles=False)
