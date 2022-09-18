@@ -6,7 +6,7 @@ A dynamic image classifier website that uses a Tensorflow Machine learning model
 ## For Linux/Mac
 ### Installing venv 
 ```shell 
-sudo apt-get install python3.6-venv
+sudo apt-get install python3.8-venv
 ```
 ### Creating virtual env
 ```shell 
