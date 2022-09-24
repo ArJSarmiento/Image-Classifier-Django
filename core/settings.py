@@ -1,38 +1,14 @@
 import django_on_heroku
 import os
-import tensorflow.compat.v1 as tf
-from keras.applications import vgg16
-from tensorflow.python.keras.backend import set_session
 import environ
-
-from silence_tensorflow import silence_tensorflow
-silence_tensorflow()
-
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
-
-global GRAPH1
-GRAPH1 = tf.get_default_graph()
-####
-# Backward compatible
-tf.disable_v2_behavior()
-####
-
-SESS = tf.compat.v1.Session()
-
-
-tf.global_variables_initializer()
-# Sets the global TensorFlow session.
-set_session(SESS)
-
-IMAGE_MODEL = vgg16.VGG16(weights="imagenet")
 
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -41,8 +17,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS=['*']
 CORS_ORIGIN_ALLOW_ALL = True
